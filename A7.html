@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+
+<!--
+
+ Name:              David Bui
+ Email address:     David_Bui@student.uml.edu
+ Affiliation:       Student at UMass Lowell in course COMP 4610 GUI Programming I
+ Date file created: November 10, 2016
+ Short Description: This is the html file for my Assignment 7. It is supposed to do
+                    the same thing as the previous assingment but with the jQuery
+                    validation plugin.
+
+-->
+
+<html>
+  <head>
+    <meta charset=utf-8>
+
+    <title>
+      Assignment 7
+    </title>
+
+    <link href="css/A7_CSS.css" type="text/css" rel="stylesheet" >
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/A7.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+  </head>
+
+  <body>
+    <h1>
+      Dynamically Created Multiplication Table
+    </h1>
+
+    <fieldset>
+      <legend>
+        Input Values
+      </legend>
+
+      <form id="input" name="input" action="A7.html" method="GET">
+        <p>
+          <label for="rowMins">Minimum Row Value: </label>
+          <input type="text" id="rowMins" name="rowMins" value="0">
+        </p>
+        <p>
+          <label for="rowMaxs">Maximum Row Value: </label>
+          <input type="text" id="rowMaxs" name="rowMaxs" value="1">
+        </p>
+        <p>
+          <label for="columnMins">Minimum Column Value: </label>
+          <input type="text" id="columnMins" name="columnMins" value="0">
+        </p>
+        <p>
+          <label for="columnMaxs">Maximum Column Value: </label> 
+          <input type="text" id="columnMaxs" name="columnMaxs" value="1">
+        </p>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </fieldset>
+
+    <div id="table"></div>
+
+  </body>
+</html>
